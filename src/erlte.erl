@@ -68,7 +68,7 @@ compile(Input, Variables, Options) -> erlte_compiler:compile(Input, Variables, O
     Reason :: file:posix() | badarg | terminated | system_limit.
 % @doc Write the compiled template to the specified file
 compiled_write_file(Filename, Compiled = #erlte_compiled{}) -> 
-    CompiledBinary = erlang:term_to_binary(Compiled, [{compressed, 9}, {minor_version, 1}]),
+    CompiledBinary = erlang:term_to_binary(Compiled, [{minor_version, 1}]),
     file:write_file(Filename, CompiledBinary).
 
 -spec compiled_read_file(Filename) -> {ok, Compiled} | {error, Reason} when
