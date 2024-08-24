@@ -193,15 +193,16 @@ CompilationVariables = [
 
 ## Erlang versions supported
 
-erlte officially supports OTP release 20 and later.
+erlte officially supports OTP release 21 and later.
 
-Development takes place using OTP 25 release and tests are done on:
-- 25.0.3
+Development takes place using OTP 27 release and tests are done on:
+- 27.0.1
+- 26.2.5
+- 25.3.2
 - 24.3.4
 - 23.3.4
 - 22.3.4
 - 21.3.8
-- 20.3.8
 
 Unofficially, you may be able to use erlte with older Erlang versions. No guarantee included.
 
